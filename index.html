@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="all.min.css" />
+  <!-- <script src="color-modes.js"></script> -->
+  <link rel="stylesheet" href="bootstrap-icons-1.10.5/font/bootstrap-icons.min.css">
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <title>Frontend Mentor | E-commerce product page</title>
+<link rel="stylesheet" href="main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="over-image"></div>
+  <header class="d-flex">
+    <div class="links">
+    <i class="bi bi-list fs-1 me-2 menu position-relative"></i>
+    <img class="logo" src="/images/logo.svg" alt="">
+      <ul class="d-flex mx-3 ul">
+        <li>
+          <a href="#">
+            Collections
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Men
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Women
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact
+          </a>
+        </li>
+        <div class="bar"></div>
+      </ul>
+  </div>
+    <div class="buy position-relative d-flex align-items-center">
+      <i class="bi bi-cart3 icon-shop"></i>
+      <img class="profile" src="/images/image-avatar.png" alt="">
+    </div>
+    <div class="shop" style="height: auto; height: 500px; overflow-y:scroll;">Cart<br>
+      <!-- <div class="box" style="position: relative; top:-50px;">
+        <div class="">
+            <div class="d-flex">
+                <img class="rounded mt-5" src="images/image-product-1.jpg" alt="">
+                <div class="info ms-3 mt-5" style="color: #777;text-align: left;">
+                    <span class"">Fall Limited Edition Sneakers</span>
+                    <div>
+                        $125.00 * 3 = $250.00
+                        <span class="final-price" style="font-weight: bold; color:black;">$350.00
+                        </span>
+                    </div>
+                </div>
+                <i class="trash bi bi-trash3 ms-4 pt-4 text-right" style="margin-top: 55px;color:#acaeb1; cursor: pointer;"></i>
+            </div>
+            <button class="button btn btn-lg px-5 mt-4" style="background-color: #ff7d1b; color: white; margin-bottom: -30px;width: 100%;">checkout</button>
+        </div>
+    </div> -->
+    </div>
+  </header>
+  <div class="overlow"></div>
+  <div class="page">
+    <i class="bi bi-x-lg ms-4 pt-4 d-block close"></i>
+    <ul class="d-block ul">
+      <li>
+        <a href="#">
+          Collections
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Men
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Women
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+    <div class="body d-flex align-items-center">
+        <div class="contain-images mt-5">
+            <div class="images position-relative">
+              <i class="bi bi-arrow-left-circle-fill arr-left fs-3" style="color: white;"></i>
+              <div class="img-main">
+                <img class="main img-fluid rounded" src="images/image-product-1.jpg" alt="">
+              </div>
+              <i class="bi bi-arrow-right-circle-fill arr-right fs-3"  style="color: white;"></i>
+              <div class="imgs mt-4 d-flex">
+                <img class=" active rounded me-4" src="images/image-product-1.jpg" alt="">
+                <img class="rounded me-4" src="images/image-product-2.jpg" alt="">
+                <img class="rounded me-4" src="images/image-product-3.jpg" alt="">
+                <img class="rounded me-4" src="images/image-product-4.jpg" alt="">
+              </div>
+              <button class="addImage" style="display: non;">.</button>
+            </div>
+            <div class="imagestwo position-relative">
+              <i class="bi bi-arrow-left-circle-fill arr-left2 fs-3" style="color: white;"></i>
+              <div class="img-main2">
+                <img class="main2 img-fluid rounded" src="images/image-product-1.jpg" alt="">
+              </div>
+              <i class="bi bi-arrow-right-circle-fill arr-right2 fs-3"  style="color: white;"></i>
+              <div class="imgs2 mt-4 d-flex">
+                <img class="active rounded me-4" src="images/image-product-1.jpg" alt="">
+                <i class="bi bi-x close2" style="cursor: pointer; color: #ff7d1b;"></i>
+                <img class="rounded me-4" src="images/image-product-2.jpg" alt="">
+                <img class="rounded me-4" src="images/image-product-3.jpg" alt="">
+                <img class="rounded me-4" src="images/image-product-4.jpg" alt="">
+              </div>
+            </div>
+        </div>
+        <div class="content ms-4 mt-5">
+            <p class="fw-bold text-uppercase" style="color: #ff7d1b;">Sneaker Company</p>
+            <h1 class="fw-bold">Fall Limited Edition <br>
+              Sneakers</h1>
+            <div class="text w-75 mt-5" style="color: #777;">
+              These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </div>
+            <span class="d-flex d-block mt-4 numbers">
+              <span class="fw-bold fs-4">$</span>
+              <span class="price fw-bold fs-4">125</span>
+              <span class="fw-bold fs-4">.00</span>
+              <span class="discount me-5">50%</span>
+              <del class="d-block ms-5 discount-total" style="color: #999;">$250.00</del>
+            </span>
+            <span class="mt-5 span-add">
+              <div class="total">
+                <i class="bi bi-dash minus"></i>
+                <span class="number mx-3">0</span>
+                <i class="bi bi-plus-lg plus"></i>
+              </div>
+              <button class="add ms-3 btn btn-lg px-5" style="background-color: #ff7d1b; color: white;"><i class="bi bi-cart3"></i> Add to cart</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+  <!-- 
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>
